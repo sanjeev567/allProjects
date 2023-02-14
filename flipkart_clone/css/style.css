@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=La+Belle+Aurore&family=Lato:wght@700&display=swap');
+
+/* variable name in css */
+:root {
+    --main-bg-color: #2874f0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    background-color: var(--main-bg-color);
+    color: white;
+
+
+}
+
+nav {
+    display: flex;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 6vw;
+    padding: 0vh 2vw;
+}
+
+nav ul {
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+nav ul li {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    list-style: none;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: 0vh .5vw;
+    color: white;
+    padding: 0vh .5vw;
+    font-size: 1.5vw;
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 20vw;
+    height: 4vh;
+    border-radius: 5px;
+    margin-left: 5vw;
+}
+
+
+/* main content */
+.container {
+    min-height: calc(100vh - 20vh);
+}
+
+.slider {
+    /* cwh uses margin adn width */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 15vh;
+
+}
+
+.slider img {
+    width: 80vw;
+    height: 50vh;
+}
+.card h2{
+    font-family: 'Lato', sans-serif;
+}
+
+.card {
+    /* background-color: rgb(113, 141, 141); */
+    margin: auto auto;
+    max-width: 95vw;
+    /* overflow: hidden; */
+    
+}
+.cards{
+    display: flex;
+    /* overflow: hidden; not working issue  */
+}
+
+.card-item {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* margin: 0 .5vw; */
+    min-width: 14.5vw;
+    flex-wrap: wrap;
+    margin: .5vh .5vw;
+   
+}
+
+.card-item img {
+    /* height: 20vh; */
+    width: 14.5vw;
+}
+
+footer {
+    background-color: var(--main-bg-color);
+    color: white;
+    height: 10vh;
+    font-family: 'Lato', sans-serif;
+
+}
